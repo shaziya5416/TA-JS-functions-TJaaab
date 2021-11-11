@@ -75,8 +75,16 @@ table();
 */
 function leapYear(){
 let year=Number(prompt(`enter year`));
-if (year%4==0)
+if (year%400==0)
 {alert(`it is leap year`)
+}
+else if(year%100==0)
+{
+alert(`not a leap year`)
+}
+else if(year%4==0)
+{
+alert(`is a leap year`)
 }
 else{
 alert(`not a leap year`)
@@ -91,5 +99,14 @@ leapYear();
   - Alert `The factorial of [number] is [factorial]`
 
 */
+function factorial(){
 let number=Number(prompt(`enter for factorial`));
+let f=1;
+for(i=number;i>=1;i--)
+{
+f=f*i;
+}
+alert(f);
+}
+factorial();
 
