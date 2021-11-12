@@ -172,11 +172,7 @@ return true;}
 else{
 return false;}
 // - Write an Arrow Function without curly brackets(if possible)
-isGreater=(x1,x2)=>
-if (x1>x2)
- true;
-else false;
-}
+isGreater=(x1,x2)=>(x1>x2) ?true:false; 
 
 
 // - Write an Arrow Function with curly brackets
