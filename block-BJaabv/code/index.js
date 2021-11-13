@@ -67,32 +67,23 @@ else{
 }
 }
 
-// Test
-pow(3, 2); // 9
-pow(3, 3); // 27
-pow(1, 100); // 1
-pow(-31, 2); // "The number below 1 is not allowed"
-
-/*
-6. 🎖Write a program that accepts two parameter a number n and a string with possible values of `sum` or `product`
-and return sum or product of 1,…,n. If user enters any other value than `sum` or `product` alert `Not a valid Input`.
-*/
-/*
 function sumOrProductOfN(n,string) {
-if (string!=="sum") || (string!=="product")
+let add=0;
+let pro=1;
+for(i=n;i<=n;i--)
 {
-alert`enter valid`;
+add=add+i;
+pro=pro*i;
 }
-else{
+switch(true){
+case (string!=="sum"):
+case (string!=="product"):alert(`inavlid`);
+case (string=="sum"):return add;
+case (string=="product"):return pro;
+}
+}
 
-
-sumOrProductOfN(4, 'sum'); // 10
-sumOrProductOfN(4, 'product'); // 24
-sumOrProductOfN(4, 'hello'); // alert "Not a valid Input"
-*/
-/*
-6. 🎖Write a program that accepts a number n using argument and return the sum of the numbers 1 to n
-*/
+//6. 🎖Write a program that accepts a number n using argument and return the sum of the numbers 1 to n
 
 function sumOfN(n)
 {
@@ -141,12 +132,10 @@ else {
 return f;
 }
 }
-;
 
 /*
 9. 🎖Write a JavaScript function which accepts an argument and returns the type of the value.
 */
-
 function typeCheck(j) {
   return typeof(j);
 }
